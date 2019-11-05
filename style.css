@@ -1,3 +1,9 @@
+:root {
+  --primary: #d14900;
+  --secondary: #2a1a5e;
+  --text-drop-shadow: 2px, 2px, var(--secondary);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -23,9 +29,17 @@ footer {
 header {
   text-align: center;
 }
+h1 {
+  color: var(--primary);
+}
 header h1 {
   border-bottom: double;
   display: inline;
+  text-shadow: var(--text-drop-shadow);
+}
+header h1:hover {
+  color: var(--secondary);
+  cursor: pointer;
 }
 header ul li {
   display: inline;
@@ -48,4 +62,8 @@ main h1 {
 .job p:first-child,
 .education p:first-child {
   margin-top: 1em;
+}
+.action:hover {
+  color: var(--secondary);
+  cursor: pointer;
 }
