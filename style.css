@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 18pt;
+}
+main {
+  flex-grow: 1;
+  max-width: 70vw;
+  align-self: center;
+}
+/* NOTE Media Query to change properties on a screen smaller than 600px */
+@media only screen and (max-width: 600px) {
+  main {
+    font-size: 16pt;
+    max-width: unset;
+  }
+}
+header,
+footer {
+  min-height: 10vh;
+}
+header {
+  text-align: center;
+}
+header h1 {
+  border-bottom: double;
+  display: inline;
+}
+header ul li {
+  display: inline;
+}
+
+main h1 {
+  margin: 0;
+}
+#skills {
+  column-count: 2;
+}
+.job p,
+.education p {
+  margin: 0;
+}
+.job ul,
+.education ul {
+  margin: 0.5em 0;
+}
+.job p:first-child,
+.education p:first-child {
+  margin-top: 1em;
+}
