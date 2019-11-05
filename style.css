@@ -35,7 +35,7 @@ h1 {
 header h1 {
   border-bottom: double;
   display: inline;
-  text-shadow: var(--text-drop-shadow);
+  text-shadow: var(--text-drop-shadow); /*Not Functional, not sure why*/
 }
 header h1:hover {
   color: var(--secondary);
